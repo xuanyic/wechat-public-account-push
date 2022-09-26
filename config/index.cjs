@@ -114,19 +114,19 @@ const USER_CONFIG = {
    */
 
   // 【推送完成提醒】模板id, 用来看自己有没有发送成功的那个模板
-  CALLBACK_TEMPLATE_ID: '_Cfyra3-cN_P7FTF7ZitXsjYFomqdgeOttCfVz_r30k',
+//   CALLBACK_TEMPLATE_ID: '_Cfyra3-cN_P7FTF7ZitXsjYFomqdgeOttCfVz_r30k',
 
   // 接收成功回调消息的微信号，（一般来说只填自己的微信号, name填不填无所谓）
-  CALLBACK_USERS: [
-    {
-      // 一般都填自己
-      name: '轩',
-      // 自己的微信id，扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
-      id: 'obgV_5-sqz6E7ICQFhu3FE_7ZNcs',
-    }
-    // 你可以不断按格式往下增加
-    // ...
-  ],
+//   CALLBACK_USERS: [
+//     {
+//       // 一般都填自己
+//       name: '轩',
+//       // 自己的微信id，扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
+//       id: 'obgV_5-sqz6E7ICQFhu3FE_7ZNcs',
+//     }
+//     // 你可以不断按格式往下增加
+//     // ...
+//   ],
 
   /**
    * 信息配置
@@ -216,7 +216,7 @@ const USER_CONFIG = {
     // ...
   ],
   // 默认的课表配置
-  COURSE_SCHEDULE: null
+//   COURSE_SCHEDULE: null
 }
 
 module.exports = USER_CONFIG

@@ -67,7 +67,7 @@ const USER_CONFIG = {
       // 扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
       id: 'obgV_5-sqz6E7ICQFhu3FE_7ZNcs',
       // 你想对他发送的模板消息的模板ID
-      useTemplateId: 'L-9ZD-eFc6sQo_ZR4-uQKB9nGOoHFdd5ct82aWrJZoY',
+      useTemplateId: '_Cfyra3-cN_P7FTF7ZitXsjYFomqdgeOttCfVz_r30k',
       // 所在省份
       province: '河南',
       // 所在城市
@@ -99,7 +99,7 @@ const USER_CONFIG = {
     {
       name: '老婆',
       id: 'obgV_58OAflInCY2DmsLECzUk_jY',
-      useTemplateId: '',
+      useTemplateId: '_Cfyra3-cN_P7FTF7ZitXsjYFomqdgeOttCfVz_r30k',
       province: '河南',
       city: '驻马店',
       horoscopeDate: '06-27',

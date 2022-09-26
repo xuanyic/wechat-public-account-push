@@ -96,25 +96,25 @@ const USER_CONFIG = {
         // 结婚纪念日
         { keyword: 'marry_day', date: '2020-05-20' },
       ],
-    {
-      name: '老婆',
-      id: '',
-      useTemplateId: '',
-      province: '',
-      city: '',
-      horoscopeDate: '',
-      horoscopeDateType: '',
-      openUrl: 'https://wangxinleo.cn',
-      festivals: [],
-      customizedDateList: [],
-  }
+//     {
+//       name: '老婆',
+//       id: '',
+//       useTemplateId: '',
+//       province: '',
+//       city: '',
+//       horoscopeDate: '',
+//       horoscopeDateType: '',
+//       openUrl: 'https://wangxinleo.cn',
+//       festivals: [],
+//       customizedDateList: [],
+//   }
 
   /**
    * 【推送完成提醒】 相关，主要用来展示发送是否成功/失败的数据
    */
 
   // 【推送完成提醒】模板id, 用来看自己有没有发送成功的那个模板
-  CALLBACK_TEMPLATE_ID: 'L-9ZD-eFc6sQo_ZR4-uQKB9nGOoHFdd5ct82aWrJZoY',
+  CALLBACK_TEMPLATE_ID: '_Cfyra3-cN_P7FTF7ZitXsjYFomqdgeOttCfVz_r30k',
 
   // 接收成功回调消息的微信号，（一般来说只填自己的微信号, name填不填无所谓）
   CALLBACK_USERS: [

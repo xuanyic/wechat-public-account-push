@@ -98,33 +98,16 @@ const USER_CONFIG = {
       ],
     {
       name: '老婆',
-      id: 'obgV_58OAflInCY2DmsLECzUk_jY',
-      useTemplateId: '_Cfyra3-cN_P7FTF7ZitXsjYFomqdgeOttCfVz_r30k',
-      province: '河南',
-      city: '驻马店',
-      horoscopeDate: '06-27',
-      horoscopeDateType: '今日',
+      id: '',
+      useTemplateId: '',
+      province: '',
+      city: '',
+      horoscopeDate: '',
+      horoscopeDateType: '',
       openUrl: 'https://wangxinleo.cn',
-      festivals: [ 
-        {
-          type: '*生日', name: '老婆', year: '2001', date: '05-07',
-        },
-        { 
-          type: '*生日', name: '男宝', year: '2001', date: '12-22',
-        },
-        {
-          type: '节日', name: '结婚纪念日', year: '2020', date: '05-20',
-        },
-                ],
-      customizedDateList: [  // 在一起的日子
-        { keyword: 'love_day', date: '2020-04-21' },
-        // 结婚纪念日
-        { keyword: 'marry_day', date: '2020-05-20' },],
-      courseSchedule: null
-    },
-    // 你可以不断按格式往下增加
-    // ...
-  ],
+      festivals: [],
+      customizedDateList: [],
+  }
 
   /**
    * 【推送完成提醒】 相关，主要用来展示发送是否成功/失败的数据

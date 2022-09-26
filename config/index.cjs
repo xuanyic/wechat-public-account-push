@@ -16,7 +16,7 @@ const USER_CONFIG = {
 
   // 是否给文字设置多彩颜色, 和emoji不兼容
   // 如果您使用了微信测试号的模板中含有emoji表情，请填 false
-  IS_SHOW_COLOR: true,
+  IS_SHOW_COLOR: false,
 
   // 功能开关,打开：true，关闭：false
   SWITCH: {
@@ -37,9 +37,9 @@ const USER_CONFIG = {
     // 朋友圈文案
     momentCopyrighting: true,
     // 毒鸡汤
-    poisonChickenSoup: false,
+    poisonChickenSoup: true,
     // 古诗古文
-    poetry: false,
+    poetry: true,
 
     /** 星座运势 */
     horoscope: true,
@@ -55,7 +55,7 @@ const USER_CONFIG = {
 
   // 每日一言的内容类型
   // 可以填写【动画，漫画，游戏，小说，原创，网络，其他】； 随机则填写 ""
-  LITERARY_PREFERENCE: '',
+  LITERARY_PREFERENCE: '""',
 
   /**
    * 接收公众号消息的微信号，如果有多个，需要在[]里用英文逗号间隔
@@ -88,12 +88,6 @@ const USER_CONFIG = {
           type: '节日', name: '结婚纪念日', year: '2020', date: '05-20',
         },
         // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
-        {
-          type: '生日', name: '李四', year: '1996', date: '09-31',
-        },
-        {
-          type: '节日', name: '被搭讪纪念日', year: '2021', date: '09-01',
-        }
       ],
       // 专属纪念日/倒数日，如果你在这里填写了纪念日/倒数日，就不会计算CUSTOMIZED_DATE_LIST的日子了, 和CUSTOMIZED_DATE_LIST的配置方法相同，可以往下查看，我这里就不重复写了
       customizedDateList: [
@@ -101,114 +95,33 @@ const USER_CONFIG = {
         { keyword: 'love_day', date: '2020-04-21' },
         // 结婚纪念日
         { keyword: 'marry_day', date: '2020-05-20' },
-        // 退伍日
-        { keyword: 'ex_day', date: '' }
       ],
-      // 课程表相关配置
-      // 如果courseSchedule不存在或者为空（null）则认为没有课程
-      // 如果courseSchedule是一个数组，则认为不区分单双周，直接填写星期几对应的课表数据即可
-      // 如果courseSchedule是一个对象（如下面所示）
-      courseSchedule: {
-        // 单双周的基准
-        benchmark: {
-          // 这里设置一个日期，用来作为判断课表是否单双周的依据
-          date: '2022-09-23',
-          // 该日期是否为单周
-          isOdd: true
+    {
+      name: '老婆',
+      id: 'obgV_58OAflInCY2DmsLECzUk_jY',
+      useTemplateId: '',
+      province: '河南',
+      city: '驻马店',
+      horoscopeDate: '06-27',
+      horoscopeDateType: '今日',
+      openUrl: 'https://wangxinleo.cn',
+      festivals: [ 
+        {
+          type: '*生日', name: '老婆', year: '2001', date: '05-07',
         },
-        // 课表
-        courses: {
-          // 单周课表
-          // 从星期一到星期日（星期六和星期日的课表数组可不填写）
-          odd: [
-            // 例子，周一的课表
-            [
-              '08:00-09:35 高等数学',
-              '09:50-11:25 高等物理'
-            ],
-            // 周二
-            [
-              '08:00-09:35 高等数学',
-              '09:50-11:25 高等物理'
-            ],
-            // 周三
-            [
-              '08:00-09:35 高等数学',
-              '09:50-11:25 高等物理'
-            ],
-            // 周四
-            [
-              '08:00-09:35 高等数学',
-              '09:50-11:25 高等物理'
-            ],
-            // 周五
-            [
-              '08:00-09:35 高等数学',
-              '09:50-11:25 高等物理'
-            ],
-            // 周六
-            [
-              '08:00-09:35 高等数学',
-              '09:50-11:25 高等物理'
-            ],
-            // 周日
-            [
-              '08:00-09:35 高等数学',
-              '09:50-11:25 高等物理'
-            ]
-          ],
-          // 双周课表
-          even: [
-            [],
-            [],
-            [],
-            [],
-            [],
-            [],
-            []
-          ]
-        }
-      },
-    },
-    {
-      name: '老婆1',
-      id: '',
-      useTemplateId: '',
-      province: '',
-      city: '',
-      horoscopeDate: '',
-      horoscopeDateType: '',
-      openUrl: 'https://wangxinleo.cn',
-      festivals: [],
-      customizedDateList: [],
+        { 
+          type: '*生日', name: '男宝', year: '2001', date: '12-22',
+        },
+        {
+          type: '节日', name: '结婚纪念日', year: '2020', date: '05-20',
+        },
+                ],
+      customizedDateList: [  // 在一起的日子
+        { keyword: 'love_day', date: '2020-04-21' },
+        // 结婚纪念日
+        { keyword: 'marry_day', date: '2020-05-20' },],
       courseSchedule: null
     },
-    {
-      name: '老婆2',
-      id: '',
-      useTemplateId: '',
-      province: '',
-      city: '',
-      horoscopeDate: '',
-      horoscopeDateType: '',
-      openUrl: 'https://wangxinleo.cn',
-      festivals: [],
-      customizedDateList: [],
-      courseSchedule: null
-    },
-    {
-      name: '老婆3',
-      id: '',
-      useTemplateId: '',
-      province: '',
-      city: '',
-      horoscopeDate: '',
-      horoscopeDateType: '',
-      openUrl: 'https://wangxinleo.cn',
-      festivals: [],
-      customizedDateList: [],
-      courseSchedule: null
-    }
     // 你可以不断按格式往下增加
     // ...
   ],
@@ -271,12 +184,6 @@ const USER_CONFIG = {
       type: '节日', name: '结婚纪念日', year: '2020', date: '05-20',
     },
     // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
-    {
-      type: '生日', name: '李四', year: '1996', date: '09-31', isShowAge: true,
-    },
-    {
-      type: '节日', name: '被搭讪纪念日', year: '2021', date: '09-01',
-    }
     // 你可以不断按格式往下增加
     // ...
   ],
@@ -298,9 +205,7 @@ const USER_CONFIG = {
     // 在一起的日子
     { keyword: 'love_day', date: '2022-09-08' },
     // 结婚纪念日
-    { keyword: 'marry_day', date: '2022-09-09' },
-    // 退伍日
-    { keyword: 'ex_day', date: '2022-09-10' }
+    { keyword: 'marry_day', date: '2022-09-09' }
     // 你可以不断按格式往下增加
     // ...
   ],
